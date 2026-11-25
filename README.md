@@ -18,6 +18,13 @@ Most of my recent work runs on the Cloudflare edge (Workers, D1, R2, Durable Obj
 | [**Lines Up**](https://linesup-architecture.com) *(client, code private)* | Multilingual website and custom CMS for an architecture studio, built solo: roles, approval workflow, scheduled publishing, 360+ tests, CI | Next.js 16, Cloudflare Workers, D1, R2 |
 | [**QRBase**](https://qrbase.xyz) *(code private)* | Gamified platform, 2nd prize at the Base hackathon on Devfolio: Next.js frontend with 50+ reusable components | Next.js, TypeScript, TanStack Query |
 
+### Open source
+
+Contributor to [**OpenNext for Cloudflare**](https://github.com/opennextjs/opennextjs-cloudflare), the adapter that runs Next.js on Cloudflare Workers:
+
+- [#1519](https://github.com/opennextjs/opennextjs-cloudflare/pull/1519) · **fix:** the config validation rejected a valid custom `tagCache` because it checked `incrementalCache` instead. Fixed the check and added the first tests for it.
+- [#1513](https://github.com/opennextjs/opennextjs-cloudflare/pull/1513) · **test:** tests that the Node.js middleware bundle keeps `cloudflare:*` imports (e.g. from `postgres`) external, sharing its esbuild resolve options with the spec.
+
 ### What I work with
 
 - **Front end:** TypeScript, React, Next.js (App Router), Vue 3, Tailwind CSS, TanStack Query, accessibility, i18n and RTL
